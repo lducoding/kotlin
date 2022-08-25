@@ -11,13 +11,21 @@ fun main() {
 // 생성자에서 바로 프로퍼티 생성 가능
 class Person (
     name:String,
-    var age:Int
-    ) {
+    var age: Int
+) {
 
     // name 이라고 하면 name의 get()을 호출해서 get() = name이면 또 get()을 호출하고 무한루프에 빠진다.
     // 그걸 방지하고자 field사용가능
 //    val name = name
 //        get() = field.uppercase()
+
+    //private val _userList: ArrayList<Int> = mu()
+    //val userList: List<Int> = _userList
+
+    private var age2: Int = 0
+    fun getAge2(): Int {
+        return age2
+    }
 
     // 커스텀 get 사용 시
     val upperCaseName: String
