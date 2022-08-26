@@ -1,7 +1,5 @@
 package com.prac.lec02
 
-import com.sun.org.apache.xpath.internal.operations.Bool
-
 fun main() {
     var str: String? = null
 
