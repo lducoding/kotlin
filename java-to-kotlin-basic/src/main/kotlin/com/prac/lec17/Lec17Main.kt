@@ -31,12 +31,9 @@ fun main() {
     // 코틀린에서 filterFruits 만들기
     fun filterFruits(fruit: List<Fruit>, filter: (Fruit) -> Boolean): List<Fruit> {
         val results = mutableListOf<Fruit>()
-        for (fruit in fruits) {
-            if(filter(fruit)) {
-                results.add(fruit)
-            }
-        }
-        return results
+
+        return fruits.filter(filter)
+
     }
 
     // 변수에 담으니깐 당연히 이렇게 호출이 가능하다
